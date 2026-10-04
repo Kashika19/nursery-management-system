@@ -1,0 +1,139 @@
+/* src/App.css */
+
+/* ------------- Base Reset ------------- */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f1f5f9; /* matches app bg */
+  color: #0f172a;
+  height: 100%;
+}
+
+/* ------------- Layout Helpers ------------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+/* ------------- Buttons ------------- */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background: #f8fafc;
+}
+
+.btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+}
+
+/* ------------- Tables ------------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  border-top: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+  background: #f8fafc;
+  font-weight: 800;
+}
+
+.table td {
+  border-top: 1px solid #e5e7eb;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Zebra rows for readability */
+.table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* ------------- Forms ------------- */
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+/* ------------- Pills / Badges ------------- */
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* ------------- Status Colors ------------- */
+.pill-allergy {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #7f1d1d;
+}
+
+.pill-intolerance {
+  background: #fef9c3;
+  border: 1px solid #fde68a;
+  color: #78350f;
+}
+
+.pill-standard {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #065f46;
+}
+
+/* ------------- Print Styles ------------- */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .btn, .toolbar {
+    display: none !important;
+  }
+  .card {
+    border: none;
+    box-shadow: none;
+  }
+}
